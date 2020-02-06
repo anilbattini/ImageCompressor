@@ -2,8 +2,9 @@
 Compress image - 5MB to ~300KB
 
 Just Keep this class in your project and call
-
-`ImageCompressor.compressBitmap(file, bitmap)`
+```
+ImageCompressor.compressBitmap(file, bitmap)
+```
 
 It even allows you to execute any callback after compressing the file.
 
