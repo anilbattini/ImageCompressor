@@ -7,9 +7,11 @@ Just Keep this class in your project and call
 
 It even allows you to execute any callback after compressing the file.
 
-###### `ImageCompressor.compressBitmap(file, bitmap, { file ->`
-###### `//Your logic using the updated compressed image file.`
-###### `})`
+```
+###### ImageCompressor.compressBitmap(file, bitmap, { file ->
+###### //Your logic using the updated compressed image file.
+###### })
+```
 
 It maintains the same aspect ratio with relatively good quality.
 Note: It only compresses JPG. 
