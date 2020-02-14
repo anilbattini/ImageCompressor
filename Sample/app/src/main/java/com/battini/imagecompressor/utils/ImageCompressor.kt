@@ -46,6 +46,11 @@ object ImageCompressor {
             BitmapFactory.decodeFile(imageFile.absolutePath, this)
             val sampleHeight = if (outWidth > outHeight) 900 else 1100
             val sampleWidth = if (outWidth > outHeight) 1100 else 900
+            /**
+             * You can tweak the sizes 900, 1100.
+             * The bigger the number is, the more details you can keep.
+             * The lesser, the lesser quality of details.
+             */
             inSampleSize = min(outWidth / sampleWidth, outHeight / sampleHeight)
             inJustDecodeBounds = false
             BitmapFactory.decodeFile(imageFile.absolutePath, this)
