@@ -3,20 +3,29 @@ Compress image - 5MB to ~300KB
 
 Just Keep this class in your project and call
 ```
-ImageCompressor.compressBitmap(file, bitmap)
+/**
+ * This doesn't compress the original image file.
+ * It compresses the bitmap and updates it to the new file and returns from app cache
+ */
+ImageCompressor.compressBitmap(context, originalImageFile)
 ```
 
 It even allows you to execute any callback after compressing the file.
-
 ```
-ImageCompressor.compressBitmap(file, bitmap, { file ->
+ImageCompressor.compressBitmap(context, originalImageFile, { file ->
    //Your logic using the updated compressed image file.
 })
 ```
 
+If you want to compress the given file directly. Use this
+
+```
+/**
+ * This compress the original file.
+ */
+ImageCompressor.compressCurrentBitmapFile(originalImageFile)
+```
+
+
 It maintains the same aspect ratio with relatively good quality.
 Note: It only compresses JPG. 
-
-If you are looking for just compress the image, this should do it.
-But if you are looking for customized options to compress like quality, size then you take a look at [here](https://github.com/zetbaitsu/Compressor).
-

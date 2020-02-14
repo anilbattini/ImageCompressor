@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Image Compressor</string>
+    <string name="choose">Choose an Image</string>
+    <string name="compress">Compress</string>
+    <string name="before_size">Before Size:</string>
+    <string name="before_location">Before Location:</string>
+    <string name="after_location">After Location</string>
+    <string name="after_size">After Size:</string>
+    <string name="take_picture">Take a Picture</string>
+</resources>
