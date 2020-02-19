@@ -1,5 +1,5 @@
 # ImageCompressor
-Compress image - 5MB to ~300KB
+Compress image - 5MB to ~250KB
 
 Just Keep this class in your project and call
 ```
